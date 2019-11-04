@@ -167,7 +167,7 @@
                             <manifest>
                                 <addClasspath>true</addClasspath>
                                 <classpathPrefix>lib/</classpathPrefix>
-                                <mainClass>com.dcits.sonicAutoTest.UITest.StartTest</mainClass>
+                                <mainClass>com.dcits.sonicAutoTest.interfaceTest.jobTestUtil.StartAssetTest</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
