@@ -17,7 +17,7 @@ public class StartAssetTest {
 
         List suites = Lists.newArrayList();
         //预言值文件，后期应该放在项目中去
-        suites.add("testNG/jobTest.xml");//path to xml..
+        suites.add("\\src\\main\\resources\\testNG\\jobTest.xml");//path to xml..
 
         testng.setTestSuites(suites);
 
