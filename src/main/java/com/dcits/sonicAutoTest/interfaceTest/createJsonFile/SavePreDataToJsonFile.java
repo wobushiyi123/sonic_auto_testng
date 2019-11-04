@@ -21,7 +21,7 @@ public class SavePreDataToJsonFile {
         // 标记文件生成是否成功
         boolean flag = true;
         // 生成的JSON文件所在路径
-        String fullPath = SavePreDataToXml.preDataFilesPath + File.separator + fileName + ".json";
+        String fullPath = SavePreDataToXml.preDataFilesPath + fileName + ".json";
 
         try {
             //创建文件

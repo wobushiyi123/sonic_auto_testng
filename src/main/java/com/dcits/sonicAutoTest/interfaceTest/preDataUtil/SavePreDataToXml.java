@@ -17,7 +17,17 @@ public class SavePreDataToXml {
     //日志打印
     private static final Logger logger = LoggerFactory.getLogger(SavePreDataToJsonFile.class);
     //预言值文件所在路径
-    public static final String preDataFilesPath = "E:" + File.separator + "preDataFiles" + File.separator;
+    public static final String preDataFilesPath =
+            System.getProperty("user.dir")
+                    + File.separator
+                    + "src"
+                    + File.separator
+                    + "main"
+                    + File.separator
+                    + "resources"
+                    + File.separator
+                    + "preDataFiles"
+                    + File.separator;
 
     /**
      * 创建存储预言值的XML文件

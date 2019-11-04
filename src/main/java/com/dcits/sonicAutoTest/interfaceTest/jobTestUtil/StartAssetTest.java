@@ -3,6 +3,7 @@ package com.dcits.sonicAutoTest.interfaceTest.jobTestUtil;
 import org.testng.TestNG;
 import org.testng.collections.Lists;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -16,8 +17,18 @@ public class StartAssetTest {
         TestNG testng = new TestNG();
 
         List suites = Lists.newArrayList();
-        //预言值文件，后期应该放在项目中去
-        suites.add("\\src\\main\\resources\\testNG\\jobTest.xml");//path to xml..
+        //testng启动类文件
+        String jobTestPath =  System.getProperty("user.dir")
+                + File.separator
+                + "src"
+                + File.separator
+                + "main"
+                + File.separator
+                + "resources"
+                + File.separator
+                + "preDataFiles"
+                + File.separator+"jobTest.xml";
+        suites.add(jobTestPath);//path to xml..
 
         testng.setTestSuites(suites);
 
