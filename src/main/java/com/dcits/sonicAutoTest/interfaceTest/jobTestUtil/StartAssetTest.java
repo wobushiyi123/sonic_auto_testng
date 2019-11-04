@@ -26,7 +26,7 @@ public class StartAssetTest {
                 + File.separator
                 + "resources"
                 + File.separator
-                + "preDataFiles"
+                + "testNG"
                 + File.separator+"jobTest.xml";
         suites.add(jobTestPath);//path to xml..
 
